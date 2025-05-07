@@ -15,8 +15,55 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="P1.cpp">
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="image_processor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="base_filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filterssketch_filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filterspaint_filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filterscartoon_filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imageprocessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="image_processor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base_filter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="filterssketch_filter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="filterspaint_filter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="filterscartoon_filter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="foto.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="prueba.jpeg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="prueba2.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Superman.jpeg">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

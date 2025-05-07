@@ -135,7 +135,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="P1.cpp" />
+    <ClCompile Include="base_filter.cpp" />
+    <ClCompile Include="filterscartoon_filter.cpp" />
+    <ClCompile Include="filterspaint_filter.cpp" />
+    <ClCompile Include="filterssketch_filter.cpp" />
+    <ClCompile Include="imageprocessor.cpp" />
+    <ClCompile Include="image_processor.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="base_filter.h" />
+    <ClInclude Include="filterscartoon_filter.h" />
+    <ClInclude Include="filterspaint_filter.h" />
+    <ClInclude Include="filterssketch_filter.h" />
+    <ClInclude Include="image_processor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="foto.jpg" />
+    <Image Include="prueba.jpeg" />
+    <Image Include="prueba2.jpg" />
+    <Image Include="Superman.jpeg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
