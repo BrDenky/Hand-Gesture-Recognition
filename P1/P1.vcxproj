@@ -139,6 +139,7 @@
     <ClCompile Include="filterscartoon_filter.cpp" />
     <ClCompile Include="filterspaint_filter.cpp" />
     <ClCompile Include="filterssketch_filter.cpp" />
+    <ClCompile Include="histogram_display.cpp" />
     <ClCompile Include="imageprocessor.cpp" />
     <ClCompile Include="image_processor.cpp" />
     <ClCompile Include="main.cpp" />
@@ -148,6 +149,7 @@
     <ClInclude Include="filterscartoon_filter.h" />
     <ClInclude Include="filterspaint_filter.h" />
     <ClInclude Include="filterssketch_filter.h" />
+    <ClInclude Include="histogram_display.h" />
     <ClInclude Include="image_processor.h" />
   </ItemGroup>
   <ItemGroup>

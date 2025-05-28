@@ -1,4 +1,3 @@
-// filters/paint_filter.hpp
 #ifndef PAINT_FILTER_HPP
 #define PAINT_FILTER_HPP
 #include "base_filter.h"
@@ -15,14 +14,14 @@ public:
     }
 
     cv::Mat apply(const cv::Mat& input) override {
-        // Step 1: Apply bilateral filter to smooth while preserving edges
+        // Apply bilateral filter to smooth while preserving edges
         cv::Mat smoothed;
         cv::bilateralFilter(input, smoothed, bilateral_d_, bilateral_color_, bilateral_space_);
-
-        // Step 2: Apply oil paint effect
         cv::Mat result = smoothed.clone();
 
-        // For each pixel in the image (avoiding the edges)
+
+        /* Apply oil paint effect
+        For each pixel in the image (avoiding the edges) */
         for (int y = radius_; y < smoothed.rows - radius_; y++) {
             for (int x = radius_; x < smoothed.cols - radius_; x++) {
                 applyOilEffect(smoothed, result, x, y);
@@ -54,13 +53,13 @@ private:
                 if (posX < 0 || posX >= src.cols || posY < 0 || posY >= src.rows)
                     continue;
 
-                // Get pixel color
+                // Get pixel color in BGR
                 cv::Vec3b color = src.at<cv::Vec3b>(posY, posX);
 
                 // Calculate intensity (average of the channels)
                 float intensity = (color[0] + color[1] + color[2]) / 3.0f;
 
-                // Determine intensity level
+                // Determine intensity level (discretized)
                 int intensityLevel = std::min(static_cast<int>(intensity * intensityLevels_ / 255), intensityLevels_ - 1);
 
                 // Increment counter and accumulate color
@@ -71,7 +70,7 @@ private:
             }
         }
 
-        // Find dominant intensity level
+        // Find dominant intensity level in neighborhood
         int maxIndex = 0;
         int maxValue = intensityCounts[0];
 

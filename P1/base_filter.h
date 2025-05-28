@@ -1,8 +1,7 @@
-// base_filter.hpp
 #ifndef BASE_FILTER_HPP
 #define BASE_FILTER_HPP
 
-#include <opencv2/opencv.hpp> // We import the OpenCV library
+#include <opencv2/opencv.hpp> // Import the OpenCV library
 
 // Base class for all filters
 class BaseFilter {

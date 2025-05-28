@@ -1,12 +1,11 @@
-// image_processor.h
 #ifndef IMAGE_PROCESSOR_H
 #define IMAGE_PROCESSOR_H
 
-#include <opencv2/opencv.hpp> // We import the OpenCV library
+#include <opencv2/opencv.hpp> // OpenCV library
 #include <string>
 #include <map>
 #include <memory>
-#include "base_filter.h" // We include the base class for the filters
+#include "base_filter.h" // Base class for the filters
 
 // / Class to load, process, and display images
 class ImageProcessor {
